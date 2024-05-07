@@ -54,8 +54,8 @@
   Set-Alias g goGoGadgetGit
  
   #my important path shortcut
-  function pro { cd "D:\projects_new" }
-  function clond { cd "D:\github_clone_in_d"}
+  function prod { cd "D:\projects_new" }
+  function cloned { cd "D:\github_clone_in_d"}
 
   #my powershell folder shortcut
   function power {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
