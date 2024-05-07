@@ -19,8 +19,6 @@
     {
       # status
       's' { git status $Params }
-      # branch
-      'c' { git checkout $Params }
       #init
       'i' {git init $Params }
       #add
