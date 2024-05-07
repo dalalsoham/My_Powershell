@@ -1,9 +1,13 @@
+ #oh-my-posh config and file path
  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
 
+ #list view in powershell
  set-PSReadLineOption -PredictionViewStyle ListView
 
+ #adapter device connection 
  set-alias -name eth -value get-netadapter
 
+ #git command shortcut all
  function goGoGadgetGit {
     Param(
       [Parameter(Mandatory = $true, Position = 0)]
@@ -49,3 +53,9 @@
   }
   Set-Alias g goGoGadgetGit
  
+  #my important path shortcut
+  function pro { cd "D:\projects_new" }
+  function clond { cd "D:\github_clone_in_d"}
+
+  #my powershell folder shortcut
+  function power {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
