@@ -40,6 +40,12 @@
 
   Set-Alias nins NpmInstall
 
+  function CreatReactApp {
+    npx create-react-app
+  }
+
+  Set-Alias ncr CreatReactApp
+
  #git command shortcut all
   function GitInit {
     git init
