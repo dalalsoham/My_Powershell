@@ -148,3 +148,6 @@
   }
 
   Set-Alias gmain GitPushUOriginMain
+
+  #neovim path open shortcut
+  function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
