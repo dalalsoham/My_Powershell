@@ -174,4 +174,4 @@ Set-Alias vs VsCode
 function NeoVim{
   nvim .
 }
-Set-Alias nv NeoVim
+Set-Alias neo NeoVim
