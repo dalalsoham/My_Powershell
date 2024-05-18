@@ -12,6 +12,8 @@ set-PSReadLineKeyHandler -Chord 'ctrl+d' -function DeleteChar
 set-alias -name eth -value get-netadapter
 # ls change to ll command
 set-alias ll ls
+#cls change to cc
+set-alias cc cls
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
