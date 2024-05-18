@@ -169,3 +169,9 @@ function VsCode {
   code .
 }
 Set-Alias vs VsCode
+
+#nvim open shortcut "nv"
+function NeoVim{
+  nvim .
+}
+Set-Alias nv NeoVim
