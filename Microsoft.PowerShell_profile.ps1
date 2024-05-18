@@ -1,18 +1,28 @@
  #oh-my-posh config and file path
  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
 
- #list view in powershell
- set-PSReadLineOption -PredictionViewStyle ListView
+#Terminal icons
+Import-Module Terminal-Icons
+#list view in powershell
+set-PSReadLineOption -PredictionViewStyle ListView
+#psreadline delete char
+set-PSReadLineKeyHandler -Chord 'ctrl+d' -function DeleteChar
 
- #adapter device connection 
- set-alias -name eth -value get-netadapter
-
+#adapter device connection 
+set-alias -name eth -value get-netadapter
+# ls change to ll command
+set-alias ll ls
+# Utilities
+function which ($command) {
+  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+}
  
  
   #my important path shortcut
   function prod { cd "D:\projects_new" }
   function cloned { cd "D:\github_clone_in_d"}
-  function mywebsite { cd "D:\My_Portfolio" }
+  function myweb { cd "D:\My_Portfolio" }
 
   #my powershell folder shortcut
   function power {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
@@ -151,3 +161,9 @@
 
   #neovim path open shortcut
   function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
+
+#vs code open shortcut "code ."
+function VsCode {
+  code .
+}
+Set-Alias vs VsCode
