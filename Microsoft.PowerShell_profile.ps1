@@ -1,5 +1,5 @@
  #oh-my-posh config and file path
- oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json' | Invoke-Expression
+ oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\soham.omp.json' | Invoke-Expression
 
 #Terminal icons
 Import-Module Terminal-Icons
@@ -25,6 +25,7 @@ function which ($command) {
   function prod { cd "D:\projects_new" }
   function cloned { cd "D:\github_clone_in_d"}
   function myweb { cd "D:\My_Portfolio" }
+  function myneodetails {cd "D:\My_Neovim_Details"}
 
   #my powershell folder shortcut
   function power {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
