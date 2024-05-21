@@ -27,8 +27,10 @@ function which ($command) {
   function myweb { cd "D:\My_Portfolio" }
   function myneodetails {cd "D:\My_Neovim_Details"}
 
+  #neovim path open shortcut
+  function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
   #my powershell folder shortcut
-  function power {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
+  function mypowershell {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
 
   #npm shortcut
   function NpmDev {
@@ -162,8 +164,7 @@ function which ($command) {
 
   Set-Alias gmain GitPushUOriginMain
 
-  #neovim path open shortcut
-  function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
+
 
 #vs code open shortcut "code ."
 function VsCode {
