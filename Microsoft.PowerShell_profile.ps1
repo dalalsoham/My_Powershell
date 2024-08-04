@@ -1,6 +1,7 @@
  #oh-my-posh config and file path
- oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\material.omp.json' | Invoke-Expression
+#  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\material.omp.json' | Invoke-Expression
   # oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json' | Invoke-Expression
+  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\robbyrussell.omp.json' | Invoke-Expression
 
 #Terminal icons
 Import-Module Terminal-Icons
