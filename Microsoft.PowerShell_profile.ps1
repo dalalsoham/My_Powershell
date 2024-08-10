@@ -10,6 +10,10 @@ set-PSReadLineOption -PredictionViewStyle ListView
 #psreadline delete char
 set-PSReadLineKeyHandler -Chord 'ctrl+d' -function DeleteChar
 
+#Fzf
+Import-Module PSFzf
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+
 #adapter device connection 
 set-alias -name eth -value get-netadapter
 # ls change to ll command
