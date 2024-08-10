@@ -13,6 +13,14 @@ set-PSReadLineKeyHandler -Chord 'ctrl+d' -function DeleteChar
 #Fzf
 Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+function f {
+  nvim (fzf)
+}
+
+function ff {
+  vim (fzf)
+}
+
 
 #adapter device connection 
 set-alias -name eth -value get-netadapter
