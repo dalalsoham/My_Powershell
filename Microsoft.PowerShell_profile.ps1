@@ -1,12 +1,12 @@
  #oh-my-posh config and file path
-#  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\material.omp.json' | Invoke-Expression
-  # oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json' | Invoke-Expression
-  oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\robbyrussell.omp.json' | Invoke-Expression
+ oh-my-posh init pwsh --config 'C:\Users\SOHAM DALAL\AppData\Local\Programs\oh-my-posh\themes\robbyrussell.omp.json' | Invoke-Expression
 
 #Terminal icons
 Import-Module Terminal-Icons
+
 #list view in powershell
 set-PSReadLineOption -PredictionViewStyle ListView
+
 #psreadline delete char
 set-PSReadLineKeyHandler -Chord 'ctrl+d' -function DeleteChar
 
@@ -16,26 +16,26 @@ Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 function f {
   nvim (fzf)
 }
-
 function ff {
   vim (fzf)
 }
 
-
 #adapter device connection 
 set-alias -name eth -value get-netadapter
+
 # ls change to ll command
 set-alias ll ls
+
 #cls change to cc
 set-alias cc cls
+
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
  
- 
-  #my important path shortcut
+ #my important path shortcut
   function prod { cd "D:\projects_new" }
   function cloned { cd "D:\github_clone_in_d"}
   function myweb { cd "D:\My_Portfolio" }
@@ -43,6 +43,7 @@ function which ($command) {
 
   #neovim path open shortcut
   function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
+
   #my powershell folder shortcut
   function mypowershell {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
 
@@ -177,8 +178,6 @@ function which ($command) {
   }
 
   Set-Alias gmain GitPushUOriginMain
-
-
 
 #vs code open shortcut "code ."
 function VsCode {
