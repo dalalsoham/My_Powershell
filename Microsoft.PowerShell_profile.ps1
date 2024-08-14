@@ -190,3 +190,30 @@ function NeoVim{
   nvim .
 }
 Set-Alias neo NeoVim
+
+# dir change shortcut
+function dir2{
+    cd ../../
+  }
+Set-Alias d2 dir2
+
+function dir3{
+    cd ../../../
+  }
+Set-Alias d3 dir3
+
+function dir4{
+    cd ../../../../
+  }
+Set-Alias d4 dir4
+
+function dir5{
+    cd ../../../../../
+  }
+Set-Alias d5 dir5
+
+# for dir check 'pwd'
+function pwdir{
+    pwd
+  }
+Set-Alias ww pwdir
