@@ -143,11 +143,17 @@ function which ($command) {
 
   Set-Alias gpl GitPull
 
-  function GitPush {
-    git push
+  function GitPushMaster {
+    git push -u origin master
   }
 
-  Set-Alias gpu GitPush
+  Set-Alias gmaster GitPushMaster
+
+  function GitPushMain {
+    git push -u origin main
+  }
+
+  Set-Alias gmain GitPushMain
 
   function GitRemote {
     git remote
