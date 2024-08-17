@@ -198,6 +198,11 @@ function NeoVim{
 Set-Alias neo NeoVim
 
 # dir change shortcut
+function dir1{
+  cd ../
+}
+Set-Alias d1 dir1
+
 function dir2{
     cd ../../
   }
