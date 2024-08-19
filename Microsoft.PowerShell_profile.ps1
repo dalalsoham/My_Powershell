@@ -227,4 +227,20 @@ Set-Alias d5 dir5
 function pwdir{
     pwd
   }
-Set-Alias ww pwdir
+Set-Alias pp pwdir
+
+#thefuck auto-correcter for cmd
+# Alias for thefuck
+Set-Alias fuck thefuck
+
+# Function to use thefuck's alias command
+function Invoke-TheFuck {
+    $lastCommand = (Get-History -Count 1).CommandLine
+    $fuckCmd = thefuck $lastCommand
+    if ($fuckCmd) {
+        Invoke-Expression $fuckCmd
+    } else {
+        Write-Output "No fucks given"
+    }
+}
+Set-Alias damn Invoke-TheFuck
