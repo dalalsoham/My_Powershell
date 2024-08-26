@@ -229,12 +229,6 @@ function pwdir{
   }
 Set-Alias pp pwdir
 
-# mkdir shortcut
- function mkd{
-    mkdir
-  }
-  Set-Alias mk mkd
-
 #thefuck auto-correcter for cmd
 # Alias for thefuck
 Set-Alias fuck thefuck
