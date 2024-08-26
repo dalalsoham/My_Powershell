@@ -40,11 +40,7 @@ function which ($command) {
   function cloned { cd "D:\github_clone_in_d"}
   function myweb { cd "D:\My_Portfolio" }
   function myneodetails {cd "D:\My_Neovim_Details"}
-
-  #neovim path open shortcut
   function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
-
-  #my powershell folder shortcut
   function mypowershell {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
 
   #npm shortcut
