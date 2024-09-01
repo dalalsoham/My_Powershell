@@ -191,7 +191,7 @@ Set-Alias vs VsCode
 function NeoVim{
   nvim .
 }
-Set-Alias neo NeoVim
+Set-Alias v NeoVim
 
 # dir change shortcut
 function dir1{
