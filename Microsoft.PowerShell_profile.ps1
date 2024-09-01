@@ -27,7 +27,7 @@ set-alias -name eth -value get-netadapter
 set-alias ll ls
 
 #cls change to cc
-set-alias cc cls
+set-alias cl cls
 
 # Utilities
 function which ($command) {
