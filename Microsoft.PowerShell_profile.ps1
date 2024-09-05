@@ -42,6 +42,7 @@ function which ($command) {
   function myneodetails {cd "D:\My_Neovim_Details"}
   function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
   function mypowershell {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
+  function myresume {cd "D:\Downloads\Resume update"}
 
   #npm shortcut
   function NpmDev {
@@ -223,7 +224,7 @@ Set-Alias d5 dir5
 function pwdir{
     pwd
   }
-Set-Alias pp pwdir
+Set-Alias pa pwdir
 
 #thefuck auto-correcter for cmd
 # Alias for thefuck
