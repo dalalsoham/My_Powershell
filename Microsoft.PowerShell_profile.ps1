@@ -43,6 +43,7 @@ function which ($command) {
   function myneovim { cd "C:\Users\SOHAM DALAL\AppData\Local\nvim" }
   function mypowershell {cd "C:\Users\SOHAM DALAL\OneDrive\Documents\PowerShell"}
   function myresume {cd "D:\Downloads\Resume update"}
+  function home {cd "C:\Users\SOHAM DALAL"}
 
   #npm shortcut
   function NpmDev {
