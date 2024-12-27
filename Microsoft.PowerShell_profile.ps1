@@ -225,7 +225,7 @@ Set-Alias d5 dir5
 function pwdir{
     pwd
   }
-Set-Alias pa pwdir
+Set-Alias whichpath pwdir
 
 #thefuck auto-correcter for cmd
 # Alias for thefuck
